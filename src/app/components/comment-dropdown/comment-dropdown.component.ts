@@ -51,10 +51,4 @@ export class CommentDropdownComponent implements OnInit {
     this.tagnameService.emitOptionChangeEvent(myobject);
   }
 
-  onSelectOption(name: string){
-    
-    console.log("onSelect:"+name);
-    
-  }
-
 }
