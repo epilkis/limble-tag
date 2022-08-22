@@ -26,14 +26,16 @@ export class BtnCommentComponent implements OnInit {
   }
 
   btnOnClick(){
-    let datepipe: DatePipe = new DatePipe('en-US');
-    let hours = new Date().getHours();
-    let ampm = hours >= 12 ? 'PM' : 'AM';
-    let d = "System - "+datepipe.transform(new Date(),"yyyy/mm/dd hh:mm")+ampm;
-    const t = {text:this.text,date:d};
-    this.tasks.push(t);
-    //zeroout textarea
-    this.tagnameService.emitCommentTextTypedEvent("");
+    if(this.text !=""){
+      let datepipe: DatePipe = new DatePipe('en-US');
+      let hours = new Date().getHours();
+      let ampm = hours >= 12 ? 'PM' : 'AM';
+      let d = "System - "+datepipe.transform(new Date(),"yyyy/mm/dd hh:mm")+ampm;
+      const t = {text:this.text,date:d};
+      this.tasks.push(t);
+      //zeroout textarea
+      this.tagnameService.emitCommentTextTypedEvent("");
+    }
   }
 
 }
