@@ -38,7 +38,7 @@ export class TagnameService {
     return NAMES;
   }
 
-  //filters out names that don't start with typed string
+  //filters out names that don't include typed string
   filterNames(containsStr: string):Name[]{
     return NAMES.filter(name => {
       return name.name.includes(containsStr)
