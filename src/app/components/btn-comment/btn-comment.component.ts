@@ -35,6 +35,8 @@ export class BtnCommentComponent implements OnInit {
       this.tasks.push(t);
       //zeroout textarea
       this.tagnameService.emitCommentTextTypedEvent("");
+    }else{
+      alert("Please add a comment");
     }
   }
 
