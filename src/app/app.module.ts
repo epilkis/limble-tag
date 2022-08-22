@@ -9,7 +9,6 @@ import { HeaderComponent } from './components/header/header.component';
 import { BtnCommentComponent } from './components/btn-comment/btn-comment.component';
 import { CommentTextareaComponent } from './components/comment-textarea/comment-textarea.component';
 import { CommentDropdownComponent } from './components/comment-dropdown/comment-dropdown.component';
-import { CommentDropdownItemComponent } from './components/comment-dropdown-item/comment-dropdown-item.component';
 import { FormsModule } from '@angular/forms';
 
 @NgModule({
@@ -20,8 +19,7 @@ import { FormsModule } from '@angular/forms';
     HeaderComponent,
     BtnCommentComponent,
     CommentTextareaComponent,
-    CommentDropdownComponent,
-    CommentDropdownItemComponent
+    CommentDropdownComponent
   ],
   imports: [
     FormsModule,
