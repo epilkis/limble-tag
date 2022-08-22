@@ -20,7 +20,6 @@ export class CommentTextareaComponent implements OnInit {
     //emitted event from comment-dropdown component via onSelectOptionChange() method
     this.tagnameService.getOptionChangeEmitter().subscribe(opt=>{
       if(opt.changed == true){
-        console.log("Setting..."+opt.name);
         this.ngTextArea="@"+opt.name;
       }
     });
