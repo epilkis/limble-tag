@@ -1,0 +1,6 @@
+header{
+    display: flex; /* flex property sets the flexible length on flexible items */
+    justify-content: center;
+    align-items: center;
+    margin-bottom:20px;
+}

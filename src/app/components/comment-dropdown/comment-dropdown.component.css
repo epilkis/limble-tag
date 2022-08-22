@@ -1,0 +1,33 @@
+.comment-dropdown-container{
+    position: relative;
+}
+
+select{
+    width: 200px;
+    bottom:100%;
+    position:absolute;
+    overflow: visible;
+    cursor: pointer;
+    /*below removes the carrot from dropdown list */
+    /*-webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: '';*/
+}
+
+.box {
+    border: 1px solid #999;
+    font-size: 14px;
+    color: #182127;
+    background-color: #eee;
+    border-radius: 5px;
+    box-shadow: 4px 4px #ccc;
+}
+
+select option:hover{
+    background-color: rgb(15, 111, 236);
+    color:white;
+}
+
+
+

@@ -1,0 +1,6 @@
+<!--task and tasks are comming from the component imports-->
+<!--[task] is a property that equals to the individual task-->
+<!--ngFor loop creates new app-task-item with each iteration-->
+
+<app-task-item *ngFor="let Task of tasks" [task]="Task"></app-task-item>
+

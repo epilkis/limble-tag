@@ -1,0 +1,12 @@
+
+<!--using ngModel to set text area text with bold NAME-->
+<textarea
+    #textValue 
+    autofocus
+    [ngModel]="ngTextArea"
+    id="textarea"
+    class="textarea" 
+    name="textarea" 
+    rows="6" cols="57"
+    (keyup)="commentTextChanged($event,textValue.value)">
+</textarea>

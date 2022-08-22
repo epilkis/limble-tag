@@ -1,0 +1,26 @@
+.task {
+  border-top:1px solid rgb(226, 225, 225);
+  background: #faf8f88f;
+  margin: 1px;
+  padding: 2px 5px;
+  cursor: pointer;
+  clear:both;
+  overflow: hidden;
+}
+
+.task h4 {
+  margin:5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.left {
+  float: left;
+  /*background: pink;*/
+}
+
+.right {
+  float: right;
+  /*background: cyan;*/
+}

@@ -1,0 +1,20 @@
+<!--Grabbing onto selectedValue using ngModel-->
+<!--Iterating through names using *ngFor directive-->
+<!--name="nameoption" and ngDefaultControl are necessary defaults for ngModel-->
+
+<div class="comment-dropdown-container" [style.visibility]="dropdownVisible?'visible':'hidden'">
+    <select class="box"
+            size={{Names.length}} 
+            [(ngModel)]="selectedValue" 
+            (change)=onSelectOptionChange()>
+        <option name="nameoption" 
+            ngDefaultControl
+            [ngModel]="name.name"
+            *ngFor="let name of Names" 
+            value={{name.userID}}
+            [selected]="selectedOpt"
+            >{{name.name}}
+            </option>
+    </select>
+</div>
+    
