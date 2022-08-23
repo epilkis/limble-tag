@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit} from '@angular/core';
 import {Task} from '../../Task'; //importing interface (model of fields)
 import {TASKS} from '../../placeholder_tasks'; //importing placeholder tasks
 
@@ -8,7 +8,7 @@ import {TASKS} from '../../placeholder_tasks'; //importing placeholder tasks
   styleUrls: ['./tasks.component.css']
 })
 export class TasksComponent implements OnInit {
-  @Input() task: Task = {id:0,text:"default",date:"default"}; //set some default value for task
+  //@Input() task: Task = {id:0,text:"default",date:"default"}; //set some default value for task
   tasks: Task[] = TASKS; //tasks can now be used in the HTML component
 
   constructor() { }

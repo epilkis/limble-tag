@@ -10,12 +10,11 @@ import { TagnameService } from 'src/app/services/tagname.service';
 })
 
 export class CommentDropdownComponent implements OnInit {
-  @Input() name: Name={name:""}; //name can now be used in HTML
   @Input() selectedValue: Name={userID:0,name:""};
-  dropdownVisible: boolean=false;
-  Names: Name[] = []; //[] initializing array of Names
   @Input() selectedOpt: any;
-  text: string="";
+  dropdownVisible: boolean=false;
+  Names: Name[] = []; 
+  text: string=""; //text in the textarea
 
   constructor(private tagnameService:TagnameService) { }
 
@@ -39,8 +38,7 @@ export class CommentDropdownComponent implements OnInit {
             //add blank name element
             this.Names.push({name:""});
           }
-        }
-        
+        }    
       }) 
   }
 

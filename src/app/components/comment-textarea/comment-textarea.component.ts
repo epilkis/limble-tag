@@ -9,9 +9,7 @@ import {Name} from '../../Name'; //importing interface (model of name fields)
   styleUrls: ['./comment-textarea.component.css']
 })
 export class CommentTextareaComponent implements OnInit {
-  ngTextArea:string="";
-  txtValue:string="";
-
+  ngTextArea:string=""; //used to set selected name in textarea
   Names: Name[]=this.tagnameService.getNames();
   constructor(private tagnameService:TagnameService) { }
 

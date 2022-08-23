@@ -10,11 +10,10 @@ import { DatePipe } from '@angular/common';
   styleUrls: ['./btn-comment.component.css']
 })
 export class BtnCommentComponent implements OnInit {
-
-  //will allow HTML to accept variables as input
+  //will allow HTML component to accept variables as input
   @Input() btntext: string="Add Comment";
-  @Input() btncolor: string= "light-gray"; 
-  tasks: Task[] = TASKS; //tasks can now be used in the HTML component
+  @Input() btncolor: string= ""; //default
+  tasks: Task[] = TASKS;
   text: string="";
 
   constructor(private tagnameService:TagnameService) { }
